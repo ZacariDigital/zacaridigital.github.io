@@ -1,0 +1,188 @@
+/*Desktop View*/
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    background-color: rgb(248, 247, 247);
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+main{
+    text-align: center;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.header-container {
+    background-color: orange;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+    
+}
+
+header {
+    max-width: 1020px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    min-height: 300px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 140px;
+}
+
+.col p{
+    color: black;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 20px 50px;
+    line-height: 1.25rem;
+}
+
+.col2
+    {background-color: white;}
+
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: orange;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+.mybutton {
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+}
+.hoops{
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*Tablet View*/
+@media(max-width: 768px){
+
+.col{
+    width: 45%;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+.header-container {
+    position: relative;
+}
+
+nav {
+    display: none;
+}
+nav a {
+    display: block;
+}
+
+.logo {
+    padding: 40px 0px;
+}
+
+.mybutton {
+    margin-left: 0px;
+}
+.hoops {
+    display: block;
+}
+
+.basketball {
+    display: none;
+}
+
+
+.navbutton {
+    display: block;
+    background-color: black;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+}
+
+
+/*Mobile View*/
+@media(max-width: 400px){
+
+    .col {
+        width: 100%;
+    }
+
+    .container {
+        padding-top: 40px;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        padding: 40px 0px;
+    }
+
+    .mybutton {
+        margin-left: 0px;
+    }
+
+}
